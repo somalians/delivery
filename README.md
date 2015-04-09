@@ -20,6 +20,8 @@
     + Cadastro de Ofertas
     + Cadastro de Clientes
 
+###Pendências
+
 + Definir infra-estrutura de projeto
 + Preparar ambiente
     * Node-JS / Express
