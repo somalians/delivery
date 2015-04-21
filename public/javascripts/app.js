@@ -1,0 +1,1 @@
+angular.module('pessoaApp', ['ngRoute', 'routes', 'PessoaCtrl', 'PessoaService']);

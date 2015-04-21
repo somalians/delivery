@@ -1,0 +1,44 @@
+<!-- public/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Starter Node and Angular</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css"> <!-- custom styles -->
+
+    <!-- JS -->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="javascripts/controllers/PessoaController.js"></script>
+    <script src="javascripts/services/PessoaService.js"></script>
+    <script src="javascripts/routes.js"></script>
+    <script src="javascripts/app.js"></script>
+</head>
+<body ng-app="pessoaApp">
+<div class="container">
+	
+    <!-- HEADER -->
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Chupattern: Node and Angular</a>
+        </div>
+
+        <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
+        <ul class="nav navbar-nav">
+            <li><a href="/#/pessoas">Pessoas</a></li>
+        </ul>
+    </nav>
+
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ng-view></div>
+
+</div>
+</body>
+</html>
