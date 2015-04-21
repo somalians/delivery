@@ -6,7 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var pessoas = require('./routes/pessoas');
+
+var mongoose = require('mongoose');
+var Pessoa = require('_/models/pessoa.js')
 
 var app = express();
 
@@ -23,7 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/pessoas', pessoas);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -56,18 +59,13 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.get('/giromba', function (req, res) {
-  res.send('Hello World FELA DA PUTA!');
-});
-
-var server = app.listen(3000, function(){
-
-  var host = server.address().address;
-  var port = server.address().port;
-  var who_is_commander = "SOMALIANSSSS MADDAFOCKER";
-
-  console.log('Example app listening at http://%s:%s %s', host, port, who_is_commander);
-
+//Mongoose setup
+mongoose.connect('mongodb://localhost/delivery', function(err) {
+    if(err) {
+        console.log('Connection Error', err);
+    } else {
+        console.log('Success on MongoDB connection');
+    }
 });
 
 module.exports = app;
