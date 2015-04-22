@@ -5,4 +5,4 @@ describe('basic', function(){
 		var soma = 1 + 1;
 		soma.should.be.equal(2);
 	})
-})
+});
