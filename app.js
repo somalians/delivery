@@ -9,7 +9,7 @@ var pessoas = require('./routes/pessoas');
 var routes = require('./routes/index');
 
 var mongoose = require('mongoose');
-var Pessoa = require('_/models/pessoa.js')
+var Pessoa = require('__/models/pessoa.js')
 
 var app = express();
 
@@ -67,5 +67,6 @@ mongoose.connect('mongodb://localhost/delivery', function(err) {
         console.log('Success on MongoDB connection');
     }
 });
+
 
 module.exports = app;

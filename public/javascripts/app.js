@@ -1,1 +1,1 @@
-angular.module('pessoaApp', ['ngRoute', 'routes', 'PessoaCtrl', 'PessoaService']);
+angular.module('pessoaApp', ['ngRoute', 'routes', 'PessoaCtrl', 'PessoaService', 'directives']);

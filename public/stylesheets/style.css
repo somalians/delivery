@@ -1,6 +1,20 @@
+.nav { height: 61px; }
 .navbar-greenblue{ background-color: #58B5BA !important; border-color: #58B5BA !important; }
-.navbar-brand { color: #F2F2F2 !important; }
+.navbar-brand { color: #F2F2F2 !important; height: 61px;}
 .navbar-nav a{ color: #F2F2F2 !important; }
+.navbar-nav a:hover, .navbar-nav a:focus{ color: #DADADA !important; }
+
+.navbar-nav li a { line-height: 61px; }
+.navbar-right {margin-right: 8px !important; }
+
+.logo { width: 100px; }
+.logo:hover path{ fill: blue !important; }
+.logo:focus path{ fill: blue; }
+
+@media (min-width: 768px){
+	.navbar-nav>li>a { padding-top: 0px; padding-bottom: 0px; }
+}
+
 .nav-sidebar { margin-right: -21px; margin-bottom: 20px; margin-left: -20px; }
 .nav-sidebar.nav a{ color: #C2C2CA; }
 .nav-sidebar.nav>li>a:focus, .nav-sidebar.nav>li>a:hover { text-decoration: none; background-color:#1F1F29; color:#FFFFFF; !important; }
