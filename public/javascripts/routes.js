@@ -8,8 +8,12 @@ angular.module('routes', []).config(['$routeProvider', '$locationProvider', func
             controller: 'PessoaController'
         })
 
-        .when('/cadastrar-estabelecimento', {
-        	templateUrl: 'views/estabelecimento/cadastro.html'
+        .when('/estabelecimento', {
+        	templateUrl: 'views/admin/estabelecimento/cadastro.html'
+        })
+
+        .when('/localidade', {
+        	templateUrl: 'views/admin/estabelecimento/cadastro.html'
         })
 
         ;
