@@ -1,8 +1,21 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.navbar-greenblue{ background-color: #58B5BA !important; border-color: #58B5BA !important; }
+.navbar-brand { color: #F2F2F2 !important; }
+.navbar-nav a{ color: #F2F2F2 !important; }
+.nav-sidebar { margin-right: -21px; margin-bottom: 20px; margin-left: -20px; }
+.nav a{ color: #F2F2F2; }
+.nav-sidebar.nav>li>a:focus, .nav-sidebar.nav>li>a:hover { text-decoration: none; background-color: #427BA1 !important; }
+
+.sidebar {
+	position: fixed;
+	top: 51px;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	display: block;
+	padding: 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #32424D;
+	border-right: 1px solid #eee;
 }
 
-a {
-  color: #00B7FF;
-}
