@@ -9,8 +9,10 @@
 .navbar-nav li a { line-height: 61px; }
 .navbar-right {margin-right: 8px !important; }
 @media (max-width: 768px) {
-	.navbar-right>li{ float: right; }
-	.navbar-right>li>a{ display: inline; padding: 0px 0px; }
+	.navbar-left { color: red; float: left !important;}
+
+	.navbar-nav>li{ float: right; }
+	.navbar-nav>li>a{ display: inline; padding: 0px 0px; }
 	.navbar-nav { margin: 0px 0px; }
 }
 
@@ -26,11 +28,12 @@
     margin-left: -80px;
 }
 
-
-
 @media (min-width: 768px){
 	.navbar-nav>li>a { padding-top: 0px; padding-bottom: 0px; }
 }
+
+.menu-hamburger{  display: none !important; }
+@media (max-width: 768px){ .menu-hamburger{  display: inline-block !important; } }
 
 /*SIDEBAR*/
 .nav-sidebar { margin-right: -21px; margin-bottom: 20px; margin-left: -20px; }
